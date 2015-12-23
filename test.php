@@ -21,11 +21,11 @@
                 <?php
                 $query = 'SELECT id, type, air_number FROM copter ORDER by TYPE';
                 $res = mysql_query($query) or die (mysql_error());
-                echo "<ul>";
+                echo "<tr>";
                 while ($row = mysql_fetch_array($res)) {
-                    echo "<li><a href='/helly/php/hel/hel_list_one.php?id=" . $row["id"] . "'>" . $row['air_number'] . "</li>";
+                    echo "<td><a href='/helly/php/hel/hel_list_one.php?id=" . $row["id"] . "'>" . $row['air_number'] . "</td>";
                 }
-                echo "</ul>";
+                echo "</tr>";
                 ?>
             </table>
     </div>
