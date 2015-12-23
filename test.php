@@ -73,54 +73,48 @@
             </ul>
         </div>
         <div id="title">Список вертолетов</div>
+
+
+        <?php
+        $query = "SELECT * FROM $dbt_h ORDER BY type";
+        $res = mysql_query($query) or die (mysql_error());
+        while ($row = mysql_fetch_array($res)) {
+            echo "
         <table id="main-tab">
             <tr>
-                <th>Тип</th>
                 <th>Номер</th>
+                <th>Тип</th>
                 <th>Позывной</th>
                 <th>Общий налет</th>
                 <th>предыдущий налет</th>
             </tr>
-            <?php
-            $query = "SELECT * FROM $dbt_h ORDER BY type";
-            $res = mysql_query($query) or die (mysql_error());
-            while ($row = mysql_fetch_array($res)) {
-                echo "<tr>";
-                echo "<td>" . $row['type'] . "</td>";
-                echo "<td>" . $row['number'] . "</td>";
-                echo "<td>" . $row['air_number'] . "</td>";
-                echo "<td>" . $row['total_fly'] . "</td>";
-                echo "<td>" . $row['last_fly'] . "</td>";
-                echo "</tr>";
-            }
+            <tbody>
+                ";
+               // <?php
+                $query = "SELECT * FROM $dbt_h ORDER BY type";
+                $res = mysql_query($query) or die (mysql_error());
+                while ($row = mysql_fetch_array($res)) {
+                    echo "<tr>";
+                    echo "<td><a href='/helly/php/hel/hel_list_one.php?id=" . $row["id"] . "'>" . $row['number'] . "</td>";
+                    echo "<td>" . $row['type'] . "</td>";
+                    echo "<td>" . $row['air_number'] . "</td>";
+                    echo "<td>" . $row['total_fly'] . "</td>";
+                    echo "<td>" . $row['last_fly'] . "</td>";
+                    echo "</tr>";
+                }
 
-            ?>
-            <!-- <tbody>
-            <tr>
-                <td>dskjbvkdsjzbv</td>
-                <td>gfdkngla</td>
-            </tr>
-            <tr>
-                <td>dskjbvkdsjzbv</td>
-                <td>gfdkngla</td>
-            </tr>
-            <tr>
-                <td>dskjbvkdsjzbv</td>
-                <td>gfdkngla</td>
-            </tr>
-            <tr>
-                <td>dskjbvkdsjzbv</td>
-                <td>gfdkngla</td>
-            </tr> -->
+        echo "
             </tbody>
         </table>
-
+        ";
+        }
+        ?>
     <div id="secondary">
-        <div id="title">Ghbdvrysyvryvetn</div>
+        <div id="title">Описание</div>
         <div id="line-top"></div>
         <div id="menu">
             <ul id="second-menu" class="second-menu">
-                <li><a href="/helly/index.php">Главная</a></li>
+                <li><a href="/helly/index.php">Общее</a></li>
                 <li><a href="/helly/php/work/work_list.php">Работы</a></li>
                 <li><a href="/helly/php/hel/hel_list.php">Вертолеты</a></li>
             </ul>
