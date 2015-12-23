@@ -80,7 +80,7 @@
             </tr>
             <?php
             $query = "SELECT * FROM $dbt_h ORDER BY type";
-            $res = mysq($query) or die (mysql_error());
+            $res = mysql_query($query) or die (mysql_error());
             while ($row = mysql_fetch_array($res)) {
                 echo "<tr>";
                 echo "<td>" . $row['type'] . "</td>";
