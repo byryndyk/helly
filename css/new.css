@@ -2,8 +2,6 @@ body{
     width: auto;
     display: table-cell;
 }
-#All{
-}
 #main-frame, #left-frame, #right-frame{
     display: inline-block;
     height: auto;
