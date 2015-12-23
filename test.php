@@ -23,7 +23,7 @@
                 $res = mysql_query($query) or die (mysql_error());
                 echo "<ul>";
                 while ($row = mysql_fetch_array($res)) {
-                    echo "<li><a href='/helly/php/hel/hel_list_one.php?=" . $row["id"] . "'>" . $row['air_number'] . "</li>";
+                    echo "<li><a href='/helly/php/hel/hel_list_one.php?id=" . $row["id"] . "'>" . $row['air_number'] . "</li>";
                 }
                 echo "</ul>";
                 ?>
