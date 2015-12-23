@@ -6,6 +6,7 @@
  <!--       <p><img class="logo" src="/helly/img/631.jpg" alt="logo"></img></p>-->
         <title>STYLE</title>
         <link rel="stylesheet" href="/helly/css/new.css" type="text/css">
+        <link rel="stylesheet" href="/helly/css/main.css" type="text/css">
     </head>
     <body>
     <div id="All">
@@ -121,8 +122,6 @@
                 </tr>
                 </tbody>
             </table>
-
-
     </div>
     </div>
     <div id="right-frame">
