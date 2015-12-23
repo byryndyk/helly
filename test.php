@@ -16,7 +16,7 @@
             <table id="plan">
                 <tr><th>Список вертолетов</th></tr>
                 <?php
-                include '../mysql.php';
+                include 'php/mysql.php';
                 $query = 'SELECT type, air_number FROM $dbt_h ORDER by TYPE';
                 $res = mysql_query($query);
                 while ($row = mysql_fetch_array($res)) {
