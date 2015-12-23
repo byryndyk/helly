@@ -21,13 +21,11 @@
                 <?php
                 $query = 'SELECT id, type, air_number FROM copter ORDER by TYPE';
                 $res = mysql_query($query) or die (mysql_error());
+                echo "<ul>";
                 while ($row = mysql_fetch_array($res)) {
-                    echo "<tr>";
-                    echo "<td type='hidden'>" . $row['id'] . "</td>";
-                    echo "<td>" . $row['type'] . "</td>";
-                    echo "<td>" . $row['air_number'] . "</td>";
-                    echo "</tr>";
+                    echo "<li>" . $row['air_number'] . "</li>>";
                 }
+                echo "</ul>";
                 ?>
             </table>
     </div>
