@@ -37,7 +37,7 @@ body{
     z-index: 4;
 }
 #menu-main, #second-menu{
-    display: inline-flex;
+    display: inline-block;
     margin-top: -30px;
 }
 .main-menu li a, .second-menu li a{
@@ -118,6 +118,7 @@ td{
     height: auto;
 }
 #second-menu {
+    display: inline-flex;
     margin: 0 auto;
     list-style-type: none;
     z-index: 20;
