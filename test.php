@@ -9,6 +9,9 @@
         <!--      <link rel="stylesheet" href="/helly/css/main.css" type="text/css"> -->
     </head>
     <body>
+
+    <?php include 'php/mysql.php'; ?>
+
     <div id="All">
     <div style=" width:100%; height:1px; clear:both;">.</div>
     <div id="left-frame">
@@ -16,7 +19,6 @@
             <table id="plan">
                 <tr><th>Список вертолетов</th></tr>
                 <?php
-                include 'php/mysql.php';
                 $query = 'SELECT id, type, air_number FROM $dbt_h ORDER by TYPE';
                 $res = mysql_query($query) or die (mysql_error());
                 while ($row = mysql_fetch_array($res)) {
