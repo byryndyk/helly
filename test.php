@@ -6,7 +6,6 @@
  <!--       <p><img class="logo" src="/helly/img/631.jpg" alt="logo"></img></p>-->
         <title>STYLE</title>
         <link rel="stylesheet" href="/helly/css/new.css" type="text/css">
-
     </head>
     <body>
     <div id="All">
@@ -20,8 +19,6 @@
                 <tr><td>fsjldjlfsn</td></tr>
                 <tr><td>fsjldjlfsn</td></tr>
             </table>
-
-
     </div>
     <div id="main-frame">
         <div id="line-top"></div>
@@ -125,7 +122,6 @@
                 </tbody>
             </table>
     </div>
-
     </div>
     <div id="right-frame">
         <table id="plan">
