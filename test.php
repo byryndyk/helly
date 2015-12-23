@@ -80,7 +80,7 @@
         $res = mysql_query($query) or die (mysql_error());
         while ($row = mysql_fetch_array($res)) {
             echo "
-        <table id="main-tab">
+        <table id='main-tab'>
             <tr>
                 <th>Номер</th>
                 <th>Тип</th>
