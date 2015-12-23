@@ -23,7 +23,7 @@
                 $res = mysql_query($query) or die (mysql_error());
                 while ($row = mysql_fetch_array($res)) {
                     echo "<tr>";
-                    echo "<td>" . $row['id'] . "</td>";
+                    echo "<td type='hidden'>" . $row['id'] . "</td>";
                     echo "<td>" . $row['type'] . "</td>";
                     echo "<td>" . $row['air_number'] . "</td>";
                     echo "</tr>";
