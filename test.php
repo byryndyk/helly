@@ -15,10 +15,18 @@
 
             <table id="plan">
                 <tr><th>Список вертолетов</th></tr>
-                <tr><td>fsjldjlfsn</td></tr>
-                <tr><td>fsjldjlfsn</td></tr>
-                <tr><td>fsjldjlfsn</td></tr>
-                <tr><td>fsjldjlfsn</td></tr>
+                <?php
+                include '../mysql.php';
+                $query = 'SELECT type, air_number FROM $dbt_h ORDER by TYPE';
+                $res = mysql_query($query);
+                while ($row = mysql_fetch_array($res)) {
+                    echo "<tr>";
+                    echo "<td>" . $row['id'] . "</td>";
+                    echo "<td>" . $row['type'] . "</td>";
+                    echo "<td>" . $row['air_number'] . "</td>";
+                    echo "</tr>";
+                }
+                ?>
             </table>
     </div>
     <div id="main-frame">
