@@ -1,0 +1,133 @@
+body{
+    width: auto;
+    display: table-cell;
+}
+#All{
+}
+#main-frame, #left-frame, #right-frame{
+    display: inline-block;
+    height: auto;
+    float: left;
+    box-shadow: 0 0 6px 1px #b1b1b1;
+    margin: 0 auto;
+    min-height: 960px;
+}
+#left-frame, #right-frame{
+    width: 130px;
+    vertical-align: top;
+}
+#main-frame {
+    width: auto;
+}
+#menu {
+    margin: 0 auto;
+    margin-top: -24px;
+}
+#line-top{
+    height: 24px;
+    width: auto;
+    background: #e4e7fa;
+    border-bottom: 2px solid #3361fa;
+    z-index: 2;
+}
+#secondary #line-top{
+    width: auto;
+    margin-top: 0px;
+}
+.main-menu{
+    margin-top: -20px;
+    z-index: 4;
+}
+#menu-main, #second-menu{
+    display: inline-block;
+   margin-top: -30px;
+}
+.main-menu li a, .second-menu li a{
+    height: 22px;
+    width: 100px;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-right:4px solid #4984a4;
+    border-left: 1px solid blue;
+    border-top: 2px solid#5b93fa;
+    border-bottom: 2px solid #3361fa;
+    margin-left: 1px;
+    text-align: center;
+    background-color: #528ee8;
+}
+li a:hover{
+    background: #1228a8;
+    border-right:4px solid #000188;
+}
+#menu-main ul li {
+    display: none;
+}
+#title{
+    margin-bottom: 10px;
+    border-right: 4px solid #4984a4;
+    border-left: 1px solid blue;
+    border-radius: 6px;
+    background-color: #3d8af7;
+    height: 22px;
+    width: auto;
+    color: white;
+    box-shadow:  5px 5px 6px 1px #b1b1b1;
+    z-index: 10;
+    text-align: center;
+}
+#plan{
+    width: 128px;
+    margin-top: 30px;
+}
+table{
+    margin: 0 auto;
+    border: 1px solid black;
+    border-collapse: collapse; 
+    box-shadow:  5px 5px 6px 1px #b1b1b1;
+}
+#main-tab{
+    float: left;
+    margin-left: 5px;
+    margin-top: 45px;
+    width: 98%;
+    overflow: scroll;
+}
+.sec-table{
+    width: 90%;
+}
+th{
+    background: #528ee8;
+    border: 1px solid black;
+}
+tr:nth-child(odd){
+    background-color: #d4e3fc;
+}
+tr:nth-child(even){
+    background-color: #e6f5ff;
+}
+td{
+    padding-left: 3px;
+    border: 1px solid black;
+}
+#secondary{
+    z-index: 11;
+    margin-left: auto;
+    margin-top: 200px;
+    width: auto;
+    height: auto;
+}
+#second-menu {
+    margin: 0 auto;
+    list-style-type: none;
+    z-index: 20;
+}
+.second-menu table{
+    margin-left: 2px;
+    width: 300px;
+    height: auto;
+    overflow: scroll;
+    table-layout: inherit;
+}
