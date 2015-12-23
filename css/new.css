@@ -37,8 +37,8 @@ body{
     z-index: 4;
 }
 #menu-main, #second-menu{
-    display: inline-block;
-   margin-top: -30px;
+    display: inline-flex;
+    margin-top: -30px;
 }
 .main-menu li a, .second-menu li a{
     height: 22px;
