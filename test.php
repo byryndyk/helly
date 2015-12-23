@@ -23,7 +23,9 @@
                 $res = mysql_query($query) or die (mysql_error());
                 echo "<tr>";
                 while ($row = mysql_fetch_array($res)) {
+                    echo "<tr>";
                     echo "<td><a href='/helly/php/hel/hel_list_one.php?id=" . $row["id"] . "'>" . $row['air_number'] . "</td>";
+                    echo "</tr>";
                 }
                 echo "</tr>";
                 ?>
