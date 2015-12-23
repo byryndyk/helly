@@ -75,8 +75,11 @@
         <div id="title">Список вертолетов</div>
         <table id="main-tab">
             <tr>
-                <th>fjlznfkls</th>
-                <th>fkshdfaskfn</th>
+                <th>Тип</th>
+                <th>Номер</th>
+                <th>Позывной</th>
+                <th>Общий налет</th>
+                <th>предыдущий налет</th>
             </tr>
             <?php
             $query = "SELECT * FROM $dbt_h ORDER BY type";
