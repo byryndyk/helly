@@ -72,13 +72,27 @@
                 <li id="menu-main"><a href="contact.php">Контакты</a></li>
             </ul>
         </div>
-        <div id="title">Ghbdvrysyvryvetn</div>
+        <div id="title">Список вертолетов</div>
         <table id="main-tab">
             <tr>
                 <th>fjlznfkls</th>
                 <th>fkshdfaskfn</th>
             </tr>
-            <tbody>
+            <?php
+            $query = "SELECT * FROM $dbt_h ORDER BY type";
+            $res = mysq($query) or die (mysql_error());
+            while ($row = mysql_fetch_array($res)) {
+                echo "<tr>";
+                echo "<td>" . $row['type'] . "</td>";
+                echo "<td>" . $row['number'] . "</td>";
+                echo "<td>" . $row['air_number'] . "</td>";
+                echo "<td>" . $row['total_fly'] . "</td>";
+                echo "<td>" . $row['last_fly'] . "</td>";
+                echo "</tr>";
+            }
+
+            ?>
+            <!-- <tbody>
             <tr>
                 <td>dskjbvkdsjzbv</td>
                 <td>gfdkngla</td>
@@ -94,7 +108,7 @@
             <tr>
                 <td>dskjbvkdsjzbv</td>
                 <td>gfdkngla</td>
-            </tr>
+            </tr> -->
             </tbody>
         </table>
 
