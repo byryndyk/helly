@@ -17,8 +17,8 @@
                 <tr><th>Список вертолетов</th></tr>
                 <?php
                 include 'php/mysql.php';
-                $query = 'SELECT type, air_number FROM $dbt_h ORDER by TYPE';
-                $res = mysql_query($query);
+                $query = 'SELECT id, type, air_number FROM $dbt_h ORDER by TYPE';
+                $res = mysql_query($query) or die (mysql_error());
                 while ($row = mysql_fetch_array($res)) {
                     echo "<tr>";
                     echo "<td>" . $row['id'] . "</td>";
