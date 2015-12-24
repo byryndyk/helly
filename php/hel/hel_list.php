@@ -1,7 +1,7 @@
 <?php
 include '../head.php';
 include '../mysql.php';
-
+include '../left.php';
 mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to databases!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT * FROM $dbt_h";
@@ -39,7 +39,7 @@ while ($row = mysql_fetch_array($res)){
     echo "</div>";
     echo "<br>";
 include '../cal.php';
-
+include '../right.php';
 echo "</body>";
 echo "</html>";
 

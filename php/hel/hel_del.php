@@ -1,6 +1,7 @@
 <?php 
 include '../head.php';
 include '../mysql.php';
+include '../left.php';
 
 
 var_dump($_GET);
@@ -36,6 +37,7 @@ if (isset ($_GET['delete_h'])){
 }
 mysql_close();
 
+include '../right.php';
 ?>
 </body>
 </div>

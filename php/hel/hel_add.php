@@ -1,5 +1,6 @@
 <?php
 include '../head.php';
+include '../left.php';
 ?>
 <body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <br>
@@ -57,8 +58,8 @@ include '../head.php';
 <!--    <input type="reset" class="button" value="Очистить"> -->
     <button class="submit" type="reset">Очистить</button>    
     </form>
-	
-	
+
+    <?php include '../right.php'; ?>
 </body>
 </div>
 </html>

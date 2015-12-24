@@ -1,5 +1,6 @@
 <?php
 include '../mysql.php';
+include '../left.php';
 //echo $_POST['hel_id'];
 //echo $_POST['update_last_repaire'];
 var_dump($_POST);
@@ -45,6 +46,6 @@ echo ("<H1>Добавлено<H1>
     <a href='/helly/index.php'>Вернуться</a>
 ");
 
-
+include '../right.php';
 ?>				
 

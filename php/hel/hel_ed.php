@@ -1,6 +1,7 @@
 <?php 
 include '../head.php';
 include '../mysql.php';
+include '../left.php';
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['ckbx_he'])){
 
@@ -133,7 +134,7 @@ mysql_close();
 
 ?>
 </div>
-
+<?php include 'right.php'; ?>
 </body>
 
 </html>
