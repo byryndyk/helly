@@ -37,6 +37,6 @@ echo "<div id='edit'>";
 echo "</div>";
 
 mysql_close();
-include '../right.php';
-include '../fotter.php';
+
+include '../end.php';
 ?>
