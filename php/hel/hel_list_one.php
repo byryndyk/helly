@@ -1,7 +1,7 @@
 <?php
 include '../head.php';
 include '../mysql.php';
-include '../left.php';
+
 $query_h ="SELECT * FROM $dbt_h WHERE id=".$_GET['id'];
 $query_u ="SELECT id, name, serial_number FROM $dbt_u WHERE install=".$_GET['id'];
 

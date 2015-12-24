@@ -1,6 +1,6 @@
 <?php
 include '../mysql.php';
-include "../left.php";
+
 mysql_connect ($dbip, $dbuser, $dbpass) or die ("Не могу подключиться к базе!!!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "INSERT INTO $dbt_h SET number='".$_POST['number']."',

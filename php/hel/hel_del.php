@@ -1,7 +1,6 @@
 <?php 
 include '../head.php';
 include '../mysql.php';
-include '../left.php';
 
 
 var_dump($_GET);

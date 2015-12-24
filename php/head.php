@@ -10,7 +10,17 @@
         <link rel="stylesheet" href="/helly/css/new.css" type="text/css">
     </head>
     <body>
-    <div id="line-top"></div>
+
+
+    <?php include 'php/mysql.php'; ?>
+
+    <div id="All">
+        <div style=" width:100%; height:1px; clear:both;">.</div>
+        <?php include 'php/left.php'; ?>
+
+        <div id="main-frame">
+
+        <div id="line-top"></div>
     <div id="menu">
         <ul id="menu" class="main-menu">
             <li id="menu-main"><a href="/helly/index.php">Главная</a></li>

@@ -1,7 +1,7 @@
 <?php 
 include '../head.php';
 include '../mysql.php';
-include '../left.php';
+
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['ckbx_he'])){
 

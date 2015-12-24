@@ -1,7 +1,7 @@
 <?php
 include '../head.php';
 include '../mysql.php';
-include '../left.php';
+
 mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to DB!!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT * FROM $dbt_h WHERE id='$_GET[id]'";

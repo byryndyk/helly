@@ -1,6 +1,6 @@
 <?php
 include '../mysql.php';
-include '../left.php';
+
 //echo $_POST['hel_id'];
 //echo $_POST['update_last_repaire'];
 var_dump($_POST);

@@ -1,6 +1,6 @@
 <?php
 include '../head.php';
-include '../left.php';
+
 ?>
 <body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <br>
