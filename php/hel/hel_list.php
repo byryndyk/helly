@@ -39,5 +39,6 @@ while ($row = mysql_fetch_array($res)){
     echo "</div>";
     echo "<br>";
 include '../cal.php';
+echo "</div>";
 include '../end.php';
 ?>
