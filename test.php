@@ -81,11 +81,11 @@
             echo "
         <table id='main-tab'>
             <tr>
-                <th>Номер</th>
-                <th>Тип</th>
-                <th>Позывной</th>
-                <th>Общий налет</th>
-                <th>предыдущий налет</th>
+                <th class='col1'>Номер</th>
+                <th class='col2'>Тип</th>
+                <th class='col3'>Позывной</th>
+                <th class='col4'>Общий налет</th>
+                <th class='col5'>предыдущий налет</th>
             </tr>
             <tbody>
                 ";
