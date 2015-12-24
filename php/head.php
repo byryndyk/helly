@@ -11,10 +11,12 @@
     </head>
     <body>
     <div id="All">
+
         <?php
         include '/helly/php/mysql.php';
         include '/helly/php/left.php';
         ?>
+
         <div style=" width:100%; height:1px; clear:both;">.</div>
 
 
