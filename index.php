@@ -14,7 +14,8 @@
 
     <div id="All">
     <div style=" width:100%; height:1px; clear:both;">.</div>
-        <?php include 'php/left.php' ?>
+        <?php include 'php/left.php'; ?>
+
     <div id="main-frame">
         <div id="line-top"></div>
         <div id="menu">
