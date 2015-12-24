@@ -10,15 +10,13 @@
         <link rel="stylesheet" href="/helly/css/new.css" type="text/css">
     </head>
     <body>
-
-
-    <?php
-    include "/helly/php/mysql.php";
-    ?>
-
     <div id="All">
+        <?php
+        include "/helly/php/mysql.php";
+        include "/helly/php/left.php";
+        ?>
         <div style=" width:100%; height:1px; clear:both;">.</div>
-        <?php include "/helly/php/left.php"; ?>
+
 
         <div id="main-frame">
 
