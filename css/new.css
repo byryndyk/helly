@@ -1,6 +1,6 @@
 body{
     width: auto;
-    display: table-cell;
+    /*display: table-cell;*/
 }
 #main-frame, #left-frame, #right-frame{
     display: inline-block;
