@@ -74,7 +74,6 @@
         </div>
         <div id="title">Список вертолетов</div>
 
-
         <?php
         $query = "SELECT * FROM $dbt_h ORDER BY type";
         $res = mysql_query($query) or die (mysql_error());
