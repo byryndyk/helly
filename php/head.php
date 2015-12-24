@@ -13,12 +13,12 @@
 
 
     <?php
-    include '/helly/php/mysql.php';
+    include "/helly/php/mysql.php";
     ?>
 
     <div id="All">
         <div style=" width:100%; height:1px; clear:both;">.</div>
-        <?php include '/helly/php/left.php'; ?>
+        <?php include "/helly/php/left.php"; ?>
 
         <div id="main-frame">
 
