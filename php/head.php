@@ -1,5 +1,4 @@
 <html>
-    <div id='main-frame'>
     <head>
 	<meta charset="utf-8">
 	<meta http-equiv="Content-Type" content="text/html">
@@ -11,18 +10,13 @@
     </head>
     <body>
     <div id="All">
-
         <?php
         include 'mysql.php';
         include 'left.php';
         ?>
-
-        <div style=" width:100%; height:1px; clear:both;">.</div>
-
-
+        <!-- <div style=" width:100%; height:1px; clear:both;">.</div>-->
         <div id="main-frame">
-
-        <div id="line-top"></div>
+            <div id="line-top"></div>
     <div id="menu">
         <ul id="menu" class="main-menu">
             <li id="menu-main"><a href="/helly/index.php">Главная</a></li>
@@ -34,7 +28,6 @@
                     <li><a href="/helly/php/work/wearhouse_work.php">Склад</a></li>
                 </ul>
             </li>
-
             <li id="menu-main"><a href="/helly/php/hel/hel_list.php">Вертолеты</a>
                 <ul>
                     <li><a href="/helly/php/hel/hel_list.php">список</a></li>
@@ -62,5 +55,3 @@
             </li>
             <li id="menu-main"><a href="contact.php">Контакты</a></li>
         </ul>
-    </div>
-	
