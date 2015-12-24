@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="Content-Type" content="text/html">
  <!--       <p><img class="logo" src="/helly/img/631.jpg" alt="logo"></img></p>-->
-        <title>STYLE</title>
+        <title>Hellycopter</title>
         <link rel="stylesheet" href="/helly/css/new.css" type="text/css">
         <!--      <link rel="stylesheet" href="/helly/css/main.css" type="text/css"> -->
     </head>
@@ -40,7 +40,7 @@
                     <ul>
                         <li><a href="/helly/php/work/hel_work.php">Вертолеты</a></li>
                         <li><a href="/helly/php/work/unit_work.php">Устройства</a></li>
-                        <li ><a href="/helly/php/work/people_work.php">Люди</a></li>
+                        <li><a href="/helly/php/work/people_work.php">Люди</a></li>
                         <li><a href="/helly/php/work/wearhouse_work.php">Склад</a></li>
                     </ul>
                 </li>
