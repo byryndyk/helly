@@ -40,6 +40,7 @@ while ($row = mysql_fetch_array($res)){
     echo "<br>";
 include '../cal.php';
 include '../right.php';
+include '../end.php';
 echo "</body>";
 echo "</html>";
 
