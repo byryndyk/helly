@@ -106,8 +106,8 @@
             </tbody>
         </table>
         ";
-        }
-        ?>
+        }        ?>
+
     <div id="secondary">
         <div id="title">Описание</div>
         <div id="line-top"></div>
