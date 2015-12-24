@@ -95,7 +95,7 @@
                 while ($row = mysql_fetch_array($res)) {
                     echo "<tr>";
                     echo "<td><a href='/helly/php/hel/hel_list_one.php?id=" . $row["id"] . "'>" . $row['number'] . "</td>";
-                    echo "<td>" . $row['type'] . "</td>";
+                    echo "<td class='col2'>" . $row['type'] . "</td>";
                     echo "<td>" . $row['air_number'] . "</td>";
                     echo "<td>" . $row['total_fly'] . "</td>";
                     echo "<td>" . $row['last_fly'] . "</td>";
