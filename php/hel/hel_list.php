@@ -6,7 +6,7 @@ mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to databases!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT * FROM $dbt_h";
 $res = mysql_query($query) or die (mysql_error()); 
- //   echo "<div name='hel_list' style='margin-top:80px'>";
+    echo "<div name='hel_list' style='margin-top:10px'>";
     echo "<div id='title'>Список вертолетов</div>";
     echo "<table>";
     echo "<tr>";

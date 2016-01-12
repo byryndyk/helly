@@ -9,7 +9,7 @@ $query = "SELECT * FROM $dbt_u";
 //Formiruem spisok unitov
 
 $res = mysql_query($query) or die (mysql_error()); 
-    echo "<div name='hel_list' style='margin-top:80px'>";
+    echo "<div name='hel_list' style='margin-top:10px'>";
 //    echo "<H2 id='head_name'>Список Оборудования</H2>";
     echo "<div id='title'>Список Оборудования</div>";
     echo "<table>";
