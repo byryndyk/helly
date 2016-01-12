@@ -71,5 +71,5 @@ echo "<ul>";
     echo "Ошибка загрузки файла";
        }
        mysql_close();
-include '../fotter.php';
+include '../end.php';
  ?>
