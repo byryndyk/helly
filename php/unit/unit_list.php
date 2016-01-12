@@ -57,7 +57,7 @@ include '../cal.php';
 
 // Perehod na zagryzky csv
 ?>
-<div id="title" style="padding-top: 10px">Редактирование</div>
+<div id="title" style="margin-top: 10px">Редактирование</div>
 <?php
 echo "Загрузить список CSV <a href='csv_load.php'>Load</a>";
 include '../end.php';
