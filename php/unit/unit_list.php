@@ -24,7 +24,7 @@ $res = mysql_query($query) or die (mysql_error());
     echo "<th>Борт</th>";
     echo "</tr>";
 while ($row = mysql_fetch_array($res)){
-    echo "</tr>";
+//    echo "</tr>";
     echo "<td>".$row['id']."</td>\n";
     $qq=$row['id'];
     echo "<td>".$row['name']."</td>\n";
