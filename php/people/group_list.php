@@ -12,7 +12,7 @@ $res = mysql_query($query) or die(mysql_error());
 
 echo ("
     <div name='hel_list' style='margin-top:80px'>
-    <H2 id='head_name'>Группы</H2>
+    <div id='title'>Группы</div>
     <table>
     <tr>
     <th>Название</th>
@@ -30,4 +30,5 @@ while ($row = mysql_fetch_array($res)){
     echo "</tr>";
 }
 mysql_close();
+include '../end.php';
 ?>

@@ -7,7 +7,7 @@ mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT * FROM $dbt_h";
 $res = mysql_query($query) or die (mysql_error()); 
     echo "<div name='hel_list' style='margin-top:80px'>";
-    echo "<H2 id='head_name'>Список вертолетов</H2>";
+    echo "<div id='title'>Список вертолетов</div>";
     echo "<table>";
     echo "<tr>";
     echo "<th>#</th>";
@@ -38,7 +38,7 @@ while ($row = mysql_fetch_array($res)){
     echo "<br>";
 include '../cal.php';
 
-echo "</body>";
-echo "</html>";
+echo "</div>";
+include '../end.php';
 
 ?>

@@ -6,8 +6,8 @@ mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to databases!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT * FROM $dbt_p";
 $res = mysql_query($query) or die (mysql_error()); 
-    echo "<div name='hel_list' style='margin-top:80px'>";
-    echo "<H2 id='head_name'>Список личного состава</H2>";
+    echo "<div name='hel_list' style='margin-top:10px'>";
+    echo "<div id='title'>Список личного состава</div>";
     echo "<table>";
     echo "<tr>";
     echo "<th>#</th>";
@@ -39,12 +39,12 @@ while ($row = mysql_fetch_array($res)){
     echo "<br>";
     
 
-    echo "<div name='hel_list' style='margin-top:80px'>";
-    echo "<H2 id='head_name'>Дежурства</H2>";
+    echo "<div name='hel_list' style='margin-top:10px'>";
+    echo "<div id='title'>Дежурства</div>";
 
 include '../cal.php';
 
-echo "</body>";
-echo "</html>";
+echo "</div>";
+include '../end.php';
 
 ?>
