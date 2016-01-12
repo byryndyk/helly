@@ -21,4 +21,5 @@ echo "<br>";
 echo "</ul>";
 echo "</div>";
 echo "</div>";
+include '../end.php';
 ?>
