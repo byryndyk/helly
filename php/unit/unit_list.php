@@ -6,7 +6,6 @@ mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to databases!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT * FROM $dbt_u";
 
-
 //Formiruem spisok unitov
 
 $res = mysql_query($query) or die (mysql_error()); 
@@ -39,10 +38,7 @@ while ($row = mysql_fetch_array($res)){
 	echo "<td>".$res_install_unit['name']."</td>";
 	}
 
-//    echo "<td>".$row['unit_install']."</td>";
-
 // Otobrajaem kyda ystanovlen
-
 
     $query_h = "SELECT type, air_number, number FROM $dbt_h WHERE id=".$row['install'];
     $res_h = mysql_query($query_h) or die (mysql_error());
@@ -61,7 +57,5 @@ include '../cal.php';
 // Perehod na zagryzky csv
 
 echo "Загрузить список CSV <a href='csv_load.php'>Load</a>";
-echo "</body>";
-echo "</html>";
-
+include '../end.php';
 ?>
