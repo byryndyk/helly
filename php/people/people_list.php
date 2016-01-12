@@ -40,7 +40,7 @@ while ($row = mysql_fetch_array($res)){
     
 
     echo "<div name='hel_list' style='margin-top:10px'>";
-    echo "<div id='title'>Дежурства</div>";
+    echo "<div id='title'style='margin-bottom: 10px'>Дежурства</div>";
 
 include '../cal.php';
 
