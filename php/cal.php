@@ -69,7 +69,7 @@ $calendar.= '</table>';
 return $calendar;
     }
 /* СПОСОБ ПРИМЕНЕНИЯ */
-echo (date("<b>F Y</b>"));
+echo "<div id='title'>".(date("<b>F Y</b>"))."</div>";
 echo draw_calendar(date("d"),date("m"),date("Y"));
 
 ?>

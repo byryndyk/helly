@@ -16,9 +16,7 @@ if($_FILES["filename"]["size"] > 1024*3*1024){
     }   */
 // var_dump($_FILES);
 
-
 // Проверяем загружен ли файл
-
 
 if(is_uploaded_file($_FILES["filename"]["tmp_name"])){
 
@@ -45,6 +43,7 @@ if (($handle = fopen($upload_path.$_FILES['filename']['name'], "r")) !== FALSE){
 		    echo "<br>";
 		//    continue;
 		}
+
 	    else {
 		$queryInsert = "INSERT INTO $dbt_u (name,serial_number,install,made_date,last_repaire_date,last_repaire_work,next_repaire_date,next_repaire_work,total_work_houre) ";
 		$queryInsert .= "values (\"".$data[0]."\",".$data[1].",".$data[2].",".$data[3].",".$data[4].",".$data[5].",".$data[6].",".$data[7].",".$data[8].")";
