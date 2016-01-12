@@ -8,7 +8,7 @@ $res_u = mysql_query($query_u) or die (mysql_error());
 $row_u = mysql_fetch_array($res_u);
 
 echo "<div name='helicopter info'>";
-echo "<H2 id='head_name'>Описание устройства</H2>";
+echo "<div id='title'>Описание устройства</div>";
 echo "<div name='info'>";
 echo "Название"." ".$row_u['name'];
 echo "<br>";

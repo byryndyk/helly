@@ -11,7 +11,7 @@ $res_u = mysql_query($query_u) or die (mysql_error());
 $row_h = mysql_fetch_array($res_h);
 $qq=$_GET['id'];
 echo "<div name='helicopter info'>";
-echo "<H2 id='head_name'>Описание вертолета</H2>";
+echo "<div id='title'>Описание вертолета</div>";
 echo "<div name='info'>";
 echo "Бортовой номер"." ".$row_h['air_number'];
 echo "<br>";
