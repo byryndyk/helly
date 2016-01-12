@@ -22,6 +22,7 @@ $res = mysql_query($query) or die (mysql_error());
     echo "<th>Расположение</th>";
 //    echo "<th>Устройство</th>";
     echo "<th>Борт</th>";
+    echo "<th>Изменить</th>"
     echo "</tr>";
 while ($row = mysql_fetch_array($res)){
 //    echo "</tr>";
@@ -48,8 +49,6 @@ while ($row = mysql_fetch_array($res)){
     $row_h = mysql_fetch_array($res_h);
     
     echo "<td>".$row_h['number']." ".$row_h['type']."</td>\n";
-	
-    echo "<td>";
     echo "<td>"."<a href='unit_ed_one.php?id=$qq'>"."Edit"."</a></td>";
     echo "</tr>";
     
