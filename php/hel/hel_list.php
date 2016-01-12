@@ -10,13 +10,12 @@ $res = mysql_query($query) or die (mysql_error());
     echo "<H2 id='head_name'>Список вертолетов</H2>";
     echo "<table>";
     echo "<tr>";
-    echo "<th>#</th>";
-    echo "<th>Type</th>";
-    echo "<th>Number</th>";
-    echo "<th>Date</th>";
-    echo "<th>Repare</th>";
-
-
+    echo "<th>№</th>";
+    echo "<th>Тип</th>";
+    echo "<th>Номер</th>";
+    echo "<th>Дата</th>";
+    echo "<th>Ремонт</th>";
+    echo "<th>Изменить</th>";
     echo "</tr>";
 while ($row = mysql_fetch_array($res)){
     echo "<tr>";
