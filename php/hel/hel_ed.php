@@ -22,7 +22,7 @@ $helic_air_number = $select_h_row['air_number'];
 //echo var_dump($_POST);
     echo ("
         <div id='edit_hel'>
-	    <H3 style='margin-left: 20px; border-radius: 5px; position: relative; height:25px; width:240px; text-align: center; box-shadow:10px 10px 5px 0px rgba(0,0,0,0.5)'>Редактирование данных</H3>
+	    <div style='margin-left: 20px; border-radius: 5px; position: relative; height:25px; width:240px; text-align: center; box-shadow:10px 10px 5px 0px rgba(0,0,0,0.5)'>Редактирование данных</div>
     	    <H3>Борт $helic_number Тип $helic_type</H3>
 	    <div id='helicopter_edit'>
     		<form name='Hellicopter_edit' method='post' action='hel_ed.php'>

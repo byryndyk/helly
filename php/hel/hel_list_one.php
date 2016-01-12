@@ -27,5 +27,5 @@ echo "</ul>";
 echo "Перейти к <a href='hel_ed_one.php?id=$qq'>редактированию</a>";
 echo "</div>";
 echo "</div>";
-
+include '../end.php';
 ?>

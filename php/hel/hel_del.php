@@ -11,7 +11,7 @@ mysql_select_db($dbname) or die (mysql_error());
 $query = "SELECT id, type, number, air_number FROM $dbt_h";
 $res = mysql_query($query) or die (mysql_error());
 echo "<div name='hel_list' style='margin-top:80px'>";
-echo "<H2 id='head_name'>Удалить</H2>";
+echo "<div id='title'>Удалить</div>";
 echo "<table>";
 while ($row = mysql_fetch_array($res)){
     echo "<tr>\n";

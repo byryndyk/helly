@@ -4,7 +4,7 @@ include '../head.php';
 ?>
 <body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
     <br>
-	<H2 id="head_name">Добавление вертолета</H2>
+	<div id="title">Добавление вертолета</div>
 	<form name="add helicopter" method="post" action="../save_insert_hel.php">
     <p>
     <b>Бортовой номер</b>

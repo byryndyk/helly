@@ -8,7 +8,7 @@ $query = "SELECT * FROM $dbt_u WHERE id='$_GET[id]'";
 $res = mysql_query($query) or die (mysql_error());
 $row = mysql_fetch_array($res);
 $unit_id=$_GET['id'];
-echo "<div id='info_list'>";
+echo "<div id='title'>";
     echo "<td>".$row['name']."</td>\n";
     echo "<td>".$row['serial_number']."</td>\n";
 

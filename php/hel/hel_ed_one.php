@@ -8,7 +8,7 @@ $query = "SELECT * FROM $dbt_h WHERE id='$_GET[id]'";
 $res = mysql_query($query) or die (mysql_error());
 $row = mysql_fetch_array($res);
 $hel_id=$_GET['id'];
-echo "<div id='info_list'>";
+echo "<div id='title'>";
     echo "<td>".$row['type']."</td>\n";
     echo "<td>".$row['number']."</td>\n";
 

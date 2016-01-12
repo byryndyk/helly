@@ -23,4 +23,5 @@ while ($row_u = mysql_fetch_array($res_u)){
 echo "</ul>";
 echo "</div>";
 echo "</div>";
+include '../end.php';
 ?>

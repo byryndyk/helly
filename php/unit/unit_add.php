@@ -3,7 +3,7 @@ include '../head.php';
 ?>
 <body xmlns="http://www.w3.org/1999/html">
     <br>
-	<H2 id="head_name">Добавление оборудования</H2>
+	<div id="title">Добавление оборудования</div>
 	<form name="add unit" method="post" action="save_insert_unit.php">
     <p>
     <b>Наименование</b>

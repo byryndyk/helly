@@ -18,7 +18,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && !empty($_POST['delete_u'])){
 
 
 echo "<br>";
-echo "<H2 id='head_name'>Удаление оборудования</H2>";
+echo "<div id='title'>Удаление оборудования</div>";
 echo "<br>";
 echo "<table>";
 echo "<form name='delete' method='post' action='unit_del.php'>";
@@ -43,8 +43,5 @@ echo "</form>";
 
 }*/
 mysql_close();
-
+include '../end.php';
 ?>
-</body>
-
-</html>
