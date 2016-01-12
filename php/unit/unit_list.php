@@ -10,7 +10,8 @@ $query = "SELECT * FROM $dbt_u";
 
 $res = mysql_query($query) or die (mysql_error()); 
     echo "<div name='hel_list' style='margin-top:80px'>";
-    echo "<H2 id='head_name'>Список Оборудования</H2>";
+//    echo "<H2 id='head_name'>Список Оборудования</H2>";
+    echo "<div id='title'>Список Оборудования</div>";
     echo "<table>";
     echo "<tr>";
     echo "<th>#</th>";
