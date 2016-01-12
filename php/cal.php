@@ -5,7 +5,7 @@ function draw_calendar($month,$year){
 $calendar = '<table cellpadding="0" cellspacing="0" class="calendar">';
 /* Заглавия в таблице */
 $headings = array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
-$calendar.= '<tr class="calendar-row"><td class="calendar-day-head">'.implode('</td><td class="calendar-day-head">',$headings).'</td></tr>';
+$calendar.= '<tr class="calendar-row"><td class="calendar-day-head">'.implode('</td><th class="calendar-day-head">',$headings).'</th></tr>';
 /* необходимые переменные дней и недель... */
 $running_day = date('w',mktime(0,0,0,$month,1,$year));
 $days_in_month = date('t',mktime(0,0,0,$month,1,$year));
