@@ -22,7 +22,7 @@ $res = mysql_query($query) or die (mysql_error());
     echo "<th>Расположение</th>";
 //    echo "<th>Устройство</th>";
     echo "<th>Борт</th>";
-    echo "<th>Изменить</th>"
+    echo "<th>Изменить</th>";
     echo "</tr>";
 while ($row = mysql_fetch_array($res)){
 //    echo "</tr>";
