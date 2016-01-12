@@ -56,7 +56,9 @@ while ($row = mysql_fetch_array($res)){
 include '../cal.php';
 
 // Perehod na zagryzky csv
-
+?>
+<div id="title">Редактирование</div>
+<?php
 echo "Загрузить список CSV <a href='csv_load.php'>Load</a>";
 include '../end.php';
 ?>
