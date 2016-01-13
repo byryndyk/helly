@@ -132,3 +132,9 @@ td{
 .col2 {
     width: 20px;
 }
+#data{
+    margin: 5px;
+    margin-top: 10px;
+    text-align: left;
+
+}
