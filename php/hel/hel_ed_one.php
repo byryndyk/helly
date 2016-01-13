@@ -33,6 +33,8 @@ echo "</div>";
        <br>
     <label>Ремонт<input name='update_last_repaire' type='date'></label>
         <br>
+    <label>Следующий Ремонт<input name='next_repaire' type='date'></label>
+        <br>
     <label>Крайний налет<input name='last_fly' type='number'></label>
         <br>
 
