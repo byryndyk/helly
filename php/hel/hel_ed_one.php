@@ -30,8 +30,11 @@ echo "</div>";
     <label><input name='hel_id' value='$hel_id' type='hidden'></label>
 
     <label>Налет<input name='update_work_time' type='number'></label>
+       <br>
     <label>Ремонт<input name='update_last_repaire' type='date'></label>
+        <br>
     <label>Крайний налет<input name='last_fly' type='number'></label>
+        <br>
 
     <label><input type='submit' class='button' data='save' value='Save'></label>
     <label><input type='reset' class='button' value='Clear'>
