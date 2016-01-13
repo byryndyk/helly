@@ -24,18 +24,18 @@ $work_m = $row['work_time']%60;
     echo "<li id='list_work'>"."Последний налет"." ".$row['last_fly']."</li>";
 
 echo "</div>";
-
-echo "<div id='edit'>";
-    echo "<form name='edit helicopter' method='post' action='update_copter.php'>";
-    echo "<label></label><input name='hel_id' value='$hel_id' type='hidden'></label>";
-    echo "<label></label><input name='update_work_time' type='number'></label>";
-    echo "<label><input name='update_last_repaire' type='date'></label>";
-    echo "<label><input name='last_fly' type='number'></label>";
-    echo "<label><input type='submit' class='button' data='save' value='Save'></label>";
-    echo "<label><input type='reset' class='button' value='Clear'>";
-    echo "</form>";
-echo "</div>";
-
+?>
+<div id='edit'>
+    <form name='edit helicopter' method='post' action='update_copter.php'>
+    <label><input name='hel_id' value='$hel_id' type='hidden'></label>
+    <label><input name='update_work_time' type='number'></label>
+    <label><input name='update_last_repaire' type='date'></label>
+    <label><input name='last_fly' type='number'></label>
+    <label><input type='submit' class='button' data='save' value='Save'></label>
+    <label><input type='reset' class='button' value='Clear'>
+    </form>
+</div>
+<?php
 mysql_close();
 
 include '../end.php';
