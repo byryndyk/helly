@@ -27,17 +27,15 @@ echo "</div>";
 ?>
 <div id='edit'>
     <form name='edit helicopter' method='post' action='update_copter.php'>
-    <label><input name='hel_id' value='$hel_id' type='hidden'></label>
-
-    <label>Налет<input name='update_work_time' type='number'></label>
-       <br>
-    <label>Ремонт<input name='update_last_repaire' type='date'></label>
-        <br>
-    <label>Следующий Ремонт<input name='next_repaire' type='date'></label>
-        <br>
-    <label>Крайний налет<input name='last_fly' type='number'></label>
-        <br>
-
+        <input name='hel_id' value='$hel_id' type='hidden'>
+        Налет<input name='update_work_time' type='number'>
+            <br>
+        Ремонт<input name='update_last_repaire' type='date'>
+            <br>
+        Следующий Ремонт<input name='next_repaire' type='date'>
+            <br>
+        Крайний налет<input name='last_fly' type='number'>
+            <br>
     <label><input type='submit' class='button' data='save' value='Save'></label>
     <label><input type='reset' class='button' value='Clear'>
     </form>
