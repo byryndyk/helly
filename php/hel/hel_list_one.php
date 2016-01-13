@@ -10,12 +10,11 @@ $res_u = mysql_query($query_u) or die (mysql_error());
 
 $row_h = mysql_fetch_array($res_h);
 $qq=$_GET['id'];
-?>
-<div name='helicopter info'>";
-<div id='title'>Описание вертолета</div>";
-<div name='info'>";
-<?php echo "Бортовой номер"." ".$row_h['air_number'];?>
-<br>";
+echo "<div name='helicopter info'>";
+echo "<H2 id='head_name'>Описание вертолета</H2>";
+echo "<div name='info'>";
+echo "Бортовой номер"." ".$row_h['air_number'];
+echo "<br>";
 echo "Тип"." ".$row_h['type'];
 echo "<br>";
 echo "Серийній номер ".$row_h['number'];
