@@ -1,7 +1,7 @@
 <?php
 include '../mysql.php';
-
-mysql_connect ($dbip, $dbuser, $dbpass) or die ("Не могу подключиться к базе!!!");
+var_dump($_POST);
+mysql_connect ($dbip, $dbuser, $dbpas) or die ("Не могу подключиться к базе!!!");
 mysql_select_db($dbname) or die (mysql_error());
 $query = "INSERT INTO $dbt_h SET number='".$_POST['number']."',
 				serial_number='".$_POST['serial_number']."',
@@ -17,11 +17,11 @@ $query = "INSERT INTO $dbt_h SET number='".$_POST['number']."',
 				";
 mysql_query($query) or die(mysql_error());
 mysql_close();
-
+include "../menu.php";
 echo ("<H1>Добавлено<H1>
     <a href='/helly/index.php'>Вернуться</a>
 ");
-
+echo "</div>";
 include '../right.php';
 ?>				
 

@@ -1,5 +1,5 @@
 <?php
-include '../head.php';
+include '../menu.php';
 include '../mysql.php';
 
 mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to DB!!");
@@ -27,7 +27,7 @@ echo "</div>";
 ?>
 <div id='edit'>
     <form name='edit helicopter' method='post' action='update_copter.php'>
-        <label><input name='hel_id' value='$hel_id' type='hidden'></label>
+        <label><input name='hel_id' value='$hel_id' type='hidden'></label><br>
         <label>Налет<input name='update_work_time' type='number'></label>
             <br>
         <label>Ремонт<input name='update_last_repaire' type='date'></label>
@@ -43,6 +43,6 @@ echo "</div>";
 </div>
 <?php
 mysql_close();
-
+echo "</div>";
 include '../end.php';
 ?>

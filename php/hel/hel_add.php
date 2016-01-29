@@ -1,65 +1,79 @@
 <?php
-include '../head.php';
-
+include '../menu.php';
 ?>
-<body xmlns="http://www.w3.org/1999/html" xmlns="http://www.w3.org/1999/html">
-    <br>
-	<div id="title">Добавление вертолета</div>
-	<form name="add helicopter" method="post" action="../save_insert_hel.php">
-    <p>
-    <b>Бортовой номер</b>
-    <label><input name="number" type="text" size="10"></label>
-    </p>
-    <p>
-    <b>Серийный номер</b>
-    <label><input name="serial_number" type="text" size="30"></label>
-    </p>
-    <p>
-    <b>Полетный номер</b>
-    <label><input name="air_number" type="text" size="30"></label>
-    </p>
-    <p>
-    <b>Тип</b><br>
-	<label><input type="radio" name="type" value="Mi-8MT">Ми-8МТ<br></label>
-	<label><input type="radio" name="type" value="Mi-24P">Ми-24П<br></label>
-	<label><input type="radio" name="type" value="Mi-24V">Ми-24В<br></label>
-    </p>
-    <p>
-    <b>Дата выпуска</b>
-    <label><input name="made_date" type="date"></label>
-    </p>
-    <p>
-    <b>Общий налет</b>
-    <label><input name="total_fly" type="text" size="20"></label>
-    </p>
-    <p>
-    <b>Наработка</b>
-    <label><input name="work_time" type="text" size="20"></label>
-    </p>
-    <p>
-    <b>Капитальный ремонт</b>
-    <label><input name="last_repaire_date" type="date"></label>
-    </p>
-    <p>
-    <b>Следующий ремонт</b>
-    <label><input name="next_repaire_date" type="date"></label>
-    <span class="form_hint">Ghfdbkmys</span>
-    </p>
-    <p>
-    <b>Наработка после ремонта</b>
-    <label><input name="last_repaire_work" type="text"></label>
-    </p>
-    <p>
-    <b>Наработка до следующего ремонта</b>
-    <label><input name="next_repaire_work" type=text></label>
-    <br>
-<!--    <input type="submit" class="submit" value="Сохранить"> -->
-    <button class="submit" type="submit">Сохранить</button>
-<!--    <input type="reset" class="button" value="Очистить"> -->
-    <button class="submit" type="reset">Очистить</button>    
-    </form>
+    <div><h3 class="title">Добавление вертолета</h3></div>
+    <div class="input-group">
+        <form role="form" class="form-inline" name="add helicopter" method="post" action="save_insert_hel.php">
+            <div class="form-group">
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Бортовой номер</span>
+                    <input class="form-control" placeholder="Number" name="number" type="text">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Серийный номер</span>
+                    <input class="form-control" name="serial_number" placeholder="Serial number" type="text">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Полетный номер</span>
+                    <input class="form-control" name="air_number" placeholder="Air number" type="text">
+                </div>
+                <div class="input-group input-group-lg">
+                    <div class="radio">
+                        <div class="input-group input-group-lg">
+                            <span class="input-group-addon" id="basic-addon3">Тип</span>
+                                <div style="width: 212px; border: solid 1px #ccc; border-radius: 6px; padding-left: 5px">
+                                    <?php
+                                    include '../mysql.php';
+                                        mysql_connect ($dbip, $dbuser, $dbpas) or die ("Cant connect to DB!!");
+                                        mysql_select_db($dbname) or die (mysql_error());
+                                        $query = "SELECT DISTINCT type FROM $dbt_h";
+                                        $res = mysql_query($query) or die (mysql_error());
+                                        $row = mysql_fetch_array($res);
+                                        while ($row = mysql_fetch_array($res)) {
+                                            echo "<input type='radio' name='type' value='".$row['type']."'>".$row['type']."<br>";
+                                        };
+                                        mysql_close();
+                                    ?>
+                                    <input type="form-control" name="type" placeholder="New Type" type="text"><br>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Дата выпуска</span>
+                    <input class="form-control" name="made_date" placeholder="Create date" type="date">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="bassic-addon3">Общий налет</span>
+                    <input class="form-control" name="total_fly" placeholder="Total fly" type="text">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Наработка</span>
+                    <input class="form-control" name="work_time" placeholder="Total work" type="text">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Капитальный ремонт</span>
+                    <input class="form-control" name="last_repaire_date" type="date">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Следующий ремонт</span>
+                    <input class="form-control" name="next_repaire_date" type="date">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Наработка после ремонта</span>
+                    <input class="form-control" placeholder="Work after repaire" name="last_repaire_work" type="text">
+                </div>
+                <div class="input-group input-group-lg">
+                    <span class="input-group-addon" id="basic-addon3">Наработка до следующего ремонта</span>
+                    <input class="form-control" placeholder="Work for repaire" name="next_repaire_work" type=text>
+                </div>
+                <br>
+                <!--    <input type="submit" class="submit" value="Сохранить"> -->
+                <button class="btn btn-success" type="submit">Сохранить</button>
+                <!--    <input type="reset" class="button" value="Очистить"> -->
+                <button class="btn btn-worning" type="reset">Очистить</button>
+            </div>
+        </form>
+    
 
-    <?php include '../right.php'; ?>
-</body>
-</div>
-</html>
+<?php include '../end.php'?>

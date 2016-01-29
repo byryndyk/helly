@@ -15,5 +15,4 @@ mysql_connect ($dbip, $dbuser, $dbpas) or die ("Не могу подключит
 mysql_set_charset("utf8");
 //Vibiraem bazu
 mysql_select_db($dbname) or die (mysql_error());
-
 ?>
